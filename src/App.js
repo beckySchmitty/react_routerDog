@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import Routes from "./Routes";
-// import NavBar from "./NavBar";
+import Nav from "./Nav"
 
 import whiskey from "./images/whiskey.jpg";
 import tubby from "./images/tubby.jpg";
@@ -14,7 +14,7 @@ function App({dogs}) {
   return (
     <div>
       <BrowserRouter>
-        {/* <NavBar dogs={dogs} /> */}
+        <Nav dogs={dogs} />
         <div className="container">
           <Routes dogs={dogs} />
         </div>
